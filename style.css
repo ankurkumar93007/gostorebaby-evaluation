@@ -1,0 +1,167 @@
+/* basic page setup */
+body {
+  background: #f9f6fc;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* top header bar */
+header {
+  background: #e8f9ff;
+  padding: 1em 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+header .logo {
+  font-size: 1.7em;
+  color: #0088aa;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* main product box */
+.container {
+  background: #ffecef;
+  padding: 40px 20px;
+  max-width: 420px;
+  margin: 40px auto 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  text-align: center;
+}
+
+/* product image with hover effect */
+.product-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.product-img:hover {
+  transform: scale(1.02);
+}
+
+/* text styles */
+.headline {
+  font-size: clamp(1.5em, 4vw, 2em);
+  margin: 0.5em 0 0.2em 0;
+  color: #e74c8c;
+  font-weight: bold;
+}
+.desc {
+  font-size: 1em;
+  margin-bottom: 1em;
+  color: #444;
+}
+.price {
+  color: #0088aa;
+  font-size: clamp(1.5em, 4vw, 2em);
+  margin: 20px 0 10px 0;
+  font-weight: bold;
+}
+
+/* button styles */
+#buy-now {
+  background: #ffe4fa;
+  border: none;
+  color: #e74c8c;
+  padding: 14px 24px;
+  border-radius: 7px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+#buy-now:hover {
+  background: #e74c8c;
+  color: #fff;
+}
+
+/* review box */
+.review {
+  background: #e8f9ff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 320px;
+  margin: 20px auto 0;
+  text-align: center;
+}
+.stars {
+  color: #ffd740;
+  font-size: 1.4em;
+}
+
+/* signup box */
+.signup {
+  margin-top: 2em;
+  background: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.signup label {
+  display: block;
+  margin-bottom: 0.3em;
+  font-size: 0.95em;
+  color: #0088aa;
+  text-align: left;
+}
+.signup input[type="email"] {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 0.7em;
+  border: 1px solid #e8f9ff;
+  border-radius: 5px;
+  font-size: 1em;
+}
+.signup button {
+  background: #0088aa;
+  color: #fff;
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.signup button:hover {
+  background: #e74c8c;
+}
+
+/* footer styles */
+footer {
+  background: #e8f9ff;
+  text-align: center;
+  padding: 1em;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #555;
+}
+footer a {
+  color: #0088aa;
+  margin: 0 8px;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* responsive adjustments */
+@media (max-width: 500px) {
+  .container {
+    padding: 20px 10px;
+    max-width: 95vw;
+  }
+  .review, .signup {
+    max-width: 95vw;
+  }
+}
